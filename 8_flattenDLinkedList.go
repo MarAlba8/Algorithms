@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+var parents_index = map[int]int{
+	3: 4,
+	8: 2,
+}
+
 func FlatList(head *DNode) *DNode {
 	walkList(head)
 	return head
@@ -25,7 +30,7 @@ func walkList(head *DNode) *DNode {
 	return prev
 }
 
-func create_dlist_with_child(n_sons, start_value int) *DNode {
+func CreateDListWithChild(n_sons, start_value int) *DNode {
 	/*Creates list of the type
 	1---2---3---4---5---6--NULL
 	         |
@@ -54,7 +59,7 @@ func create_dlist_with_child(n_sons, start_value int) *DNode {
 		}
 
 		if v, ok := parents_index[value]; ok {
-			headChild := create_dlist_with_child(v, start_value+n_sons)
+			headChild := CreateDListWithChild(v, start_value+n_sons)
 			node.Child = headChild
 		}
 		value++
