@@ -1,9 +1,8 @@
 package main
 
-import "fmt"
-
 func main() {
-
+	//-----------------------------------Arrays-----------------------------------
+	
 	//Exercice 1
 	//arr := []int{1, 3, 5, 8}
 	//fmt.Println(find_addens(arr))
@@ -15,6 +14,8 @@ func main() {
 	//Exercices 3
 	//arr := []int{0, 1, 0, 2, 1, 0, 3, 1, 0, 1, 2}
 	//fmt.Println(TrappingRainwater(arr))
+
+	//-----------------------------------Strings-----------------------------------
 
 	//Exercices 4
 	//str1 := "ab##"
@@ -30,26 +31,23 @@ func main() {
 	//str := "cameleon"
 	//fmt.Println(AlmostPalindrome(str))
 
-	//Ex linked list
+	//-----------------------------------Linked list-----------------------------------
 
 	//head := CreateLinkedList(5)
-	//fmt.Println("After reverse")
+	//PrintListValues(head)
 
 	//Question 7
 	//newList := ReversePortion(head, 1, 2)
+	//fmt.Println("After reverse")
 	//PrintListValues(newList)
 
-	//Question 8
-	//Create DlinkedList
-	head := create_dlist_with_child(6, 1)
-	PrintDListValues(head)
-	//Solution
-	head = FlatList(head)
-	fmt.Println("After flatting")
-	PrintDListValues(head)
-}
+	//-----------------------------------Doubly Linked list-----------------------------------
 
-var parents_index = map[int]int{
-	3: 4,
-	8: 2,
+	//head := CreateDListWithChild(6, 1)
+	//PrintDListValues(head)
+
+	//Question 8
+	//head = FlatList(head)
+	//fmt.Println("After flatting")
+	//PrintDListValues(head)
 }
