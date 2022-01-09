@@ -22,11 +22,34 @@ func main() {
 	//fmt.Print(typedOutString(str1, str2))
 
 	//Exercices 5
-	str := "abcbda"
-	fmt.Print(LengthOfLongestSubstring(str))
+	//str := "abcbda"
+	//fmt.Print(LengthOfLongestSubstring(str))
 
 	//Exercices 6
-	str = "A man, a plan, a canal: Panama"
+	//str = "A man, a plan, a canal: Panama"
 	//str := "cameleon"
-	fmt.Println(AlmostPalindrome(str))
+	//fmt.Println(AlmostPalindrome(str))
+
+	//Ex linked list
+
+	//head := CreateLinkedList(5)
+	//fmt.Println("After reverse")
+
+	//Question 7
+	//newList := ReversePortion(head, 1, 2)
+	//PrintListValues(newList)
+
+	//Question 8
+	//Create DlinkedList
+	head := create_dlist_with_child(6, 1)
+	PrintDListValues(head)
+	//Solution
+	head = FlatList(head)
+	fmt.Println("After flatting")
+	PrintDListValues(head)
+}
+
+var parents_index = map[int]int{
+	3: 4,
+	8: 2,
 }
